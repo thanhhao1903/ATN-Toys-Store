@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container h1
+{
+    width: fit-content;
+    margin: 25px auto;
+    font-size: 35px;
+}
+
+.container table
+{
+    margin: 10px 0;
+}
+
+.container .content
+{
+    margin-left: 213px;
+    margin-bottom: 10px;
+}
+
+.container .cart-inf
+{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container .cart-inf tr th
+{
+    padding-bottom: 10px;
+    color: red;
+    margin: 0 150px;
+    padding-right: 60px;
+}
+
+.container .cart-inf tr td
+{
+    padding: 5px 120px;
+}
+
+.container .cart-inf tr td:nth-child(4)
+{
+    font-size: 22px;
+}
+
+.container .cart-inf tr td:nth-child(4) a
+{
+    color: black;
+}
+
+.container .btn-back
+{
+    font-weight: bold;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 auto;
+    color: black;
+}
+
+.container .btn-back a
+{
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: black;
+}
+
+.container .btn-back a:hover
+{
+    background-color: #111;
+    color: #fff;
+}

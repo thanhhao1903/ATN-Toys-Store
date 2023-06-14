@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container h1
+{
+    width: fit-content;
+    margin: 25px auto;
+    font-size: 35px;
+}
+
+.container .category-inf
+{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container .category-list
+{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.container .category-inf tr th
+{
+    color: red;
+    padding: 0 80px;
+    font-size: 18px;
+}
+
+.container .category-list input
+{
+    margin-right: 110px;
+    margin-bottom: 20px;
+    width: fit-content;
+    padding: 3px;
+}
+
+.container .category-list .btn-edit
+{
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.4s;
+    color: black;
+    cursor: pointer;
+
+}
+
+.container .category-list .btn-edit:hover
+{
+    color: white;
+    background-color: black;
+}
+
+.container .category-list a
+{
+    font-size: 20px;
+    color: black;
+}
+
+.container .category-list button
+{
+    padding: 5px;
+    margin-right: 70px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.container .category-list button:hover
+{
+    color: white;
+    background-color: black;
+}
+
+.container .btn-back
+{
+    font-weight: bold;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 auto;
+    color: black;
+}
+
+.container .btn-back a
+{
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: black;
+}
+
+.container .btn-back a:hover
+{
+    background-color: #111;
+    color: #fff;
+}
+
+.container .cat-input
+{
+    width: fit-content;
+    margin: 0 330px;
+}
+
+.container .cat-input input
+{
+    margin: 0 50px;
+    /* font-size: 10px; */
+    width: 20%;
+    padding: 3px;
+}
+
+.container .cat-input a
+{
+    /* margin-left: 100px; */
+    color: black;
+}
+
+.container .cat-input button
+{
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    margin-left: 90px;
+    transition: 0.3s;
+}
+
+.container .cat-input button:hover
+{
+    background-color: #111;
+    color: #fff;
+}
+
+.container hr
+{
+    margin: 20px 0;
+}

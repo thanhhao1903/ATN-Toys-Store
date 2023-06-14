@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+article
+{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+article img
+{
+    padding: 20px;
+}
+
+article .inf
+{
+    margin-top: 80px;
+    margin-left: 30px;
+    padding: 0 30px;
+}
+
+article .inf hr
+{
+    margin: 20px 0;
+}
+
+article .inf h2, p
+{
+    margin-bottom: 1rem;
+}
+
+article .inf h2
+{
+    color: red;
+}
+
+article .inf #btn-cart
+{
+    font-size: 15px;
+    border: 2px solid rgba(37, 37, 37, 0.26);
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+article .inf .button:hover
+{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+    scale: 1.1;
+}
+
+article .inf p
+{
+    font-size: 18px;
+}
+
+article .inf p:nth-child(3)
+{
+    font-weight: bold;
+}
+
+article .inf p:nth-child(4)
+{
+    font-style: italic;
+}
+
+article .inf #quantity
+{
+    padding-bottom: 8px;
+    font-size: 18px;
+}

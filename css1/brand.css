@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section
+{
+    width: 100%;
+    height: 95vh;
+}
+
+section .texts h1
+{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 100px;
+    color: #6a6666;
+    margin: 20px 0;
+}
+
+section .texts h1 span
+{
+    color: #b36982;
+}
+
+section .texts p
+{
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    line-height: 26px;
+    text-align: justify;
+}
+
+section .background_image img
+{
+    width: 450px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    /* margin-left: 25px; */
+}
+
+.about
+{
+    width: 100%;
+    height: 125vh;
+    padding: 0 50px;
+}
+
+.about hr
+{
+    height: 2px;
+    background: #1111;
+    border-radius: 5px;
+    margin: 0 110px;
+}
+
+body .about .container h1
+{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.about .container .toy_box .toy_card a
+{
+    text-align: center;
+    margin: 15px 0;
+    color: black;;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.about .container .toy_box
+{
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.about .container .toy_box .toy_card
+{
+    background: #9d9d9d;
+    width: 300px;
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.about .container .toy_box .toy_card:hover
+{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.about .container .toy_box .toy_card img
+{
+    width: 230px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 300px;
+}
+
+.about .container .toy_box .toy_card h2
+{
+    font-weight: bold;
+}
+
+.about .container .toy_box .toy_card p span
+{
+    font-size: 30px
+}
+
+.content-container
+{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.content-container .cate-list
+{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.content-container .cate-list a
+{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-weight: bold;
+    justify-content: space-around;
+}
