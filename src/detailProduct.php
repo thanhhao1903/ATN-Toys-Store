@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details - BuBu</title>
-    <link rel="stylesheet" href="../css1/detailProduct.css">
+    <link rel="stylesheet" href="./css1/detailProduct.css">
 </head>
 <body>
 <?php
@@ -23,7 +23,7 @@
         $row = $re->fetch_assoc();
         ?>
 
-        <img src="../img/<?=$row['image']?>" class="col-sm-6 col-form-label">
+        <img src="./img/<?=$row['image']?>" class="col-sm-6 col-form-label">
         <div class="col-sm-6 inf ">
             <h1><?=$row['product_name']?></h1>
             <hr>

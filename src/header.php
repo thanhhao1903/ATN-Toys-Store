@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
-    <link rel="stylesheet" href="../css1/header.css">
+    <link rel="stylesheet" href="./css1/header.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
@@ -19,7 +19,7 @@
 </style>
 <body>
     <header>
-        <a href="homepage.php"><img src="../img/logo.png  " alt="" class="logo"></a>
+        <a href="homepage.php"><img src="./img/logo.png  " alt="" class="logo"></a>
         <ul>    
             <li><a href="homepage.php">Home</a></li>
             <li><a href="#">About</a></li>

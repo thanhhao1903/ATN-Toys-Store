@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Management</title>
-    <link rel="stylesheet" href="../css1/proManagement.css">
+    <link rel="stylesheet" href="./css1/proManagement.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -64,7 +64,7 @@ if (isset($_SESSION['Email'])) {
             <input class="form-control" type="text" id="name" name="product_name" value="<?= $row['product_name'] ?>" required>
             <input class="form-control" type="text" id="price" name="price" value="<?= $row['product_price'] ?>" required>  
             <input class="form-control" type="text" id="quantity" name="quantity" value="<?= $row['quantity'] ?>" required>
-            <img src="../img/<?=$row['image']?>" name="image" id="image" alt=""></a> 
+            <img src="./img/<?=$row['image']?>" name="image" id="image" alt=""></a> 
             <button type="submit" name="update_pro" value="<?= $row['product_id'] ?>" class="form-control">Update</button>
             <a href="deletePro.php?del_id=<?= $row['product_id'] ?>" class="delete"><i class="bi bi-trash-fill"></i></a>
         </div>

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Category - BuBu</title>
-    <link rel="stylesheet" href="../css1/homepage.css">
-    <link rel="stylesheet" href="../css1/brand.css">
+    <link rel="stylesheet" href="./css1/homepage.css">
+    <link rel="stylesheet" href="./css1/brand.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
@@ -55,7 +55,7 @@
                         <div class="toy_box col-md-3 pd-3 mx-auto">
                             <div class="toy_card">
                                 <a href="detailProduct.php?product_id=<?=$row['product_id']?>">
-                                <img src="../img/<?=$row['image']?>" alt=""></a>
+                                <img src="./img/<?=$row['image']?>" alt=""></a>
                                 <h2 class="card-text"><?= $row['product_name'] ?></h2>
                                 </a>
                                 <p class="card-subtitle mb-2 text-muted"><?=$row['product_price']?> $</p>
