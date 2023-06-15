@@ -7,10 +7,10 @@ class connect
     public $dbName;
     public function __construct()
     {
-        $this->server = "localhost";
-        $this->user = "root";
-        $this->password = "";
-        $this->dbName = "atn-toys";
+        $this->server = "pfw0ltdr46khxib3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+        $this->user = "fmzpo6fmm2p45653";
+        $this->password = "fntnldrl8lwovvgu";
+        $this->dbName = "uk1j4tc0tdcsvx21";
 
     }
     // Option 1 : mysqli
