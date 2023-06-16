@@ -18,7 +18,7 @@
 
         <!-- Content -->
         <div class="texts">
-            <h1>Edward <span>Store</span></h1>
+            <h1>ATN <span>Toys Store</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, facilis amet nisi ad ipsum rem pariatur possimus ratione accusantium sed optio illo. Maxime sint suscipit iste iure. Magni, iure voluptates.
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae itaque soluta illo, praesentium culpa molestiae eveniet, alias non autem deserunt maiores animi quidem sapiente ad dicta? Animi necessitatibus esse reiciendis?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae itaque soluta illo
