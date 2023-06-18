@@ -30,8 +30,8 @@ require_once 'header.php';
     $rows = $re->fetchAll(PDO::FETCH_BOTH);
     foreach ($rows as $r):
 ?>
-    <div class="t-shirt_box">
-        <div class="t-shirt_card">
+    <div class="toy_box">
+        <div class="toy_card">
             <a href="detailProduct.php?product_id=<?=$r['product_id']?>" class="text-decoration-none">
             <img src="./img/<?=$r['image']?>" alt=""></a>
             <h2 class="card-title"><?=$r['product_name']?></h2>
