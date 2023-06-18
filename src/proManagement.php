@@ -66,7 +66,7 @@ if (isset($_SESSION['Email'])) {
             <input class="form-control" type="text" id="quantity" name="quantity" value="<?= $row['quantity'] ?>" required>
             <img src="./img/<?=$row['image']?>" name="image" id="image" alt=""></a> 
             <button type="submit" name="update_pro" value="<?= $row['product_id'] ?>" class="form-control">Update</button>
-            <a href="deletePro.php?del_id=<?= $row['product_id'] ?>" class="delete"><i class="bi bi-trash-fill"></i></a>
+            <a href="#" class="delete"><i class="bi bi-trash-fill"></i></a>
         </div>
         <hr>
     <?php
