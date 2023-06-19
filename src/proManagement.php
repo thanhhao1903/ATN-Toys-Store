@@ -27,7 +27,7 @@ $sql = "SELECT p.product_id, p.product_name, p.product_price, p.image, storage.q
     storage.date, category.cat_name, s.sup_name FROM `storage` 
     INNER JOIN product AS p ON p.product_id = storage.product_id 
     INNER JOIN category ON category.cat_id = p.cat_id 
-    INNER JOIN supplier AS s ON s.sup_id = p.sup_id;";
+    INNER JOIN supplier AS s ON s.sup_id = p.sup_id ORDER BY p.product_id ASC;";
 $stmt = $dblink->query($sql);
 // $stmt->execute();
 // $rows = $stmt->fetch(PDO::FETCH_BOTH);
