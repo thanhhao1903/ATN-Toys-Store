@@ -36,14 +36,10 @@
                 $_SESSION['ID'] = $row['staff_id'];
                 $_SESSION['Shop_id'] = $row['shop_id'];
                 header("Location: homepage.php");
-            } 
-            else
-            {
+            } else{
                 echo "Login failed <br>";
             }
-        } 
-        else
-        {
+        } else{
             echo "Please enter your info";
         }
     }

@@ -41,10 +41,12 @@ if (isset($_SESSION['Email'])) {
         $quantity = $_POST['quantity'];
         $date = $_POST['date'];
 
-        $sql = "INSERT INTO `product`(`product_id`, `product_name`, `product_price`, `cat_id`, `sup_id`, `image`) VALUES (?,?,?,?,?,?)";
+        $sql = "INSERT INTO `product`(`product_id`, `product_name`, 
+            `product_price`, `cat_id`, `sup_id`, `image`) VALUES (?,?,?,?,?,?)";
         $re = $dblink->prepare($sql);
         $stmt = $re->execute(array("$pro_id","$pro_name", "$price", "$cat_id", "$sup_id", "$image"));
-        $sql_1 = "INSERT INTO `storage`(`shop_id`, `product_id`, `quantity`, `staff_id`, `date`) VALUES (?,?,?,?,?)";
+        $sql_1 = "INSERT INTO `storage`(`shop_id`, `product_id`, 
+            `quantity`, `staff_id`, `date`) VALUES (?,?,?,?,?)";
         $re = $dblink->prepare($sql_1);
         $stmt1 = $re->execute(array("$shop", "$pro_id", "$quantity", "$staff_id", "$date"));
         if ($stmt) {

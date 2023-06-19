@@ -23,7 +23,11 @@ if(!isset($_SESSION))
     session_start();
 }
 $dblink = $c->connectToMySQL();
-$sql = "SELECT p.product_id, p.product_name, p.product_price, p.image, storage.quantity FROM `storage` INNER JOIN product AS p ON p.product_id = storage.product_id";
+$sql = "SELECT p.product_id, p.product_name, p.product_price, p.image, storage.quantity, 
+    storage.date, category.cat_name, s.sup_name FROM `storage` 
+    INNER JOIN product AS p ON p.product_id = storage.product_id 
+    INNER JOIN category ON category.cat_id = p.cat_id 
+    INNER JOIN supplier AS s ON s.sup_id = p.sup_id;";
 $stmt = $dblink->query($sql);
 // $stmt->execute();
 // $rows = $stmt->fetch(PDO::FETCH_BOTH);
@@ -46,9 +50,11 @@ if (isset($_SESSION['Email'])) {
             <th scope="col">Product ID</th>
             <th scope="col">Product Name</th>
             <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col">Supplier</th>
             <th scope="col">Quantity</th>
+            <th scope="col">Date</th>
             <th scope="col">Image</th>
-            <th scope="col">Action</th>
             <hr>
         </tr>
     </table>
@@ -61,12 +67,13 @@ if (isset($_SESSION['Email'])) {
         <div class="table table-bordered product-list">
             <input class="form-control" type="text" id="id" name="product_id" value="<?= $row['product_id'] ?>" disabled>
             <input type="hidden" name="product_id" value="<?= $row['product_id'] ?>">
-            <input class="form-control" type="text" id="name" name="product_name" value="<?= $row['product_name'] ?>" required>
-            <input class="form-control" type="text" id="price" name="price" value="<?= $row['product_price'] ?>" required>  
-            <input class="form-control" type="text" id="quantity" name="quantity" value="<?= $row['quantity'] ?>" required>
+            <input class="form-control" type="text" id="name" name="product_name" value="<?= $row['product_name'] ?>" disabled>
+            <input class="form-control" type="text" id="price" name="price" value="<?= $row['product_price'] ?>" disabled>  
+            <input class="form-control" type="text" id="cat" name="cat" value="<?= $row['cat_name'] ?>" disabled>  
+            <input class="form-control" type="text" id="sup" name="sup" value="<?= $row['sup_name'] ?>" disabled>  
+            <input class="form-control" type="text" id="quantity" name="quantity" value="<?= $row['quantity'] ?>" disabled>
+            <input class="form-control" type="text" id="date" name="date" value="<?= $row['date'] ?>" disabled>
             <img src="./img/<?=$row['image']?>" name="image" id="image" alt=""></a> 
-            <button type="submit" name="update_pro" value="<?= $row['product_id'] ?>" class="form-control">Update</button>
-            <a href="#" class="delete"><i class="bi bi-trash-fill"></i></a>
         </div>
         <hr>
     <?php

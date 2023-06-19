@@ -32,67 +32,63 @@
 .container .product-inf tr th
 {
     color: red;
-    padding: 0 73px;
+    padding: 0 55px;
     font-size: 18px;
 }
 
 .container .product-list #id
 {
-    margin-left: 130px;
+    margin-left: 90px;
     width: 40px;
     padding: 3px;
 }
 
 .container .product-list #price
 {
-    margin-left: 100px;
-    width: 60px;
+    margin-left: 55px;
+    width: 45px;
+    padding: 3px;
+}
+
+.container .product-list #cat
+{
+    margin-left: 110px;
+    width: 65px;
+    padding: 3px;
+}
+
+.container .product-list #sup
+{
+    margin-left: 120px;
+    width: 90px;
     padding: 3px;
 }
 
 .container .product-list #quantity
 {
-    margin-left: 150px;
-    width: 40px;
+    margin-left: 120px;
+    width: 30px;
+    padding: 3px;
+}
+
+.container .product-list #date
+{
+    margin-left: 120px;
+    width: 85px;
     padding: 3px;
 }
 
 .container .product-list #name
 {
     padding: 4px;
-    margin-left: 150px;
+    margin-left: 50px;
     width: 200px;
 }
 
 .container .product-list #image
 {
     width: 65px;
-    margin-left: 160px;
-}
-
-.container .product-list .btn-edit
-{
-    font-size: 14px;
-    padding: 5px 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.4s;
-    color: black;
-    cursor: pointer;
-
-}
-
-.container .product-list .btn-edit:hover
-{
-    color: white;
-    background-color: black;
-}
-
-.container .product-list a
-{
-    font-size: 20px;
-    color: black;
+    margin-left: 80px;
 }
 
 .container .product-list button
